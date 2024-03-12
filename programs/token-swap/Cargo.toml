@@ -1,0 +1,25 @@
+[package]
+name = "token-swap"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "token_swap"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.27.0"
+anchor-spl = "0.27.0"
+solana-program = "=1.14.17"
+winnow = "=0.4.1"
+toml_datetime = "=0.6.1"
+mpl-token-metadata = { version = "1.2.5", features = ["no-entrypoint"] }
+spl-token = "3.5.0"

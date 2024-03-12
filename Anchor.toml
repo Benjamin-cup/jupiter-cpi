@@ -1,0 +1,26 @@
+[features]
+seeds = false
+skip-lint = false
+#[programs.localnet]
+[programs.mainnet]
+token_swap = "CzJLugPC4q4tsFyQuVoVwcfHE1VJgKdtGZrhXWFsKmc2"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+#cluster = "Localnet"
+cluster = "mainnet"
+wallet = "../key/user.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+#[test]
+#startup_wait = 10000
+
+#[test.validator]
+#url = "https://api.mainnet-beta.solana.com"
+
+#[[test.validator.clone]]
+#address = "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4"
