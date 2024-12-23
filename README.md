@@ -1,6 +1,12 @@
 # SOL Swap with Jupiter CPI
 
 This is a test project for Jupiter CPI
+## Contact me
+gmail : benjamin.bigdev@gmail.com
+
+discord : @.benjamincup
+
+
 
 ## How this works?
 
